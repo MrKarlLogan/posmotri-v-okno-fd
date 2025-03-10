@@ -227,7 +227,6 @@ ol {
 }
 
 .search-form__label:focus,
-.content__card-link:focus,
 .search-form__textfield:focus {
   outline: none;
 }
