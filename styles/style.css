@@ -1,3 +1,6 @@
+/* Наталья, привет! Большое спасибо тебе за обратную связь.
+Оперативно исправил все недочёты. */
+
 *,
 *::before,
 *::after {
@@ -42,7 +45,6 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
   display: flex;
   justify-content: space-between;
 }
@@ -78,6 +80,7 @@ ol {
 }
 
 .content__list-container {
+  height: 298px;
   overflow: auto;
   position: relative;
 }
@@ -87,11 +90,11 @@ ol {
   padding: 0px 3px;
 } 
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
   text-decoration: none;
 }
@@ -101,9 +104,6 @@ ol {
 }
 
 .content__video-card-description-container {
-  /* flex-grow: 1; При работе с text-overflow есть несостыковки с макетом. 
-  Пришлось отказаться в пользу width.
-  И в макете есть отступ, который должен быть перед скроллом. */
   width: 196px;
   display: flex;
   flex-direction: column;
@@ -162,7 +162,7 @@ ol {
 }
 
 .search-form {
-  height: 54px;
+  padding-top: 3px;
   display: flex;
   justify-content: space-between;
 }
@@ -201,7 +201,7 @@ ol {
   display: flex;
   gap: 5px;
   cursor: pointer;
-  padding: 0px 1px; /* Для ровной обводки при фокусе */
+  padding: 0px 1px;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
@@ -227,13 +227,13 @@ ol {
 }
 
 .search-form__label:focus,
-.content__list-item:focus,
+.content__card-link:focus,
 .search-form__textfield:focus {
   outline: none;
 }
 
 .search-form__label:has(:focus-visible),
-.content__list-item:has(:focus-visible),
+.content__card-link:has(:focus-visible),
 .button:has(:focus-visible) {
   outline: 1px solid #fff;
 }
@@ -273,8 +273,7 @@ ol {
 }
 
 .more-button {
-  width: 390px; /* Не использовал 100% потому что в макете есть отступ от scroll.
-  Если сделать 100%, то появится нижний scroll. Действую в рамках макет */
+  width: 390px;
   margin: 30px 2px 2px 2px;
 }
 
