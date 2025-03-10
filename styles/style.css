@@ -201,7 +201,7 @@ ol {
   display: flex;
   gap: 5px;
   cursor: pointer;
-  padding: 0px 1px;
+  padding: 3px 2px 0;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
