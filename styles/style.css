@@ -45,11 +45,15 @@ ol {
 
 .content {
   width: 1140px;
-  display: flex;
-  justify-content: space-between;
+  display: grid; /*Переделал на grid, как по заданию */
+  grid-template-columns: repeat(2 / 1fr);
+  gap: 30px;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .result {
+  grid-column: 1;
   width: 711px;
   display: flex;
   flex-direction: column;
@@ -67,6 +71,7 @@ ol {
 }
 
 .content__details {
+  grid-column: 2;
   width: 399px;
   display: flex;
   flex-direction: column;
@@ -162,7 +167,6 @@ ol {
 }
 
 .search-form {
-  padding-top: 3px;
   display: flex;
   justify-content: space-between;
 }
@@ -193,15 +197,17 @@ ol {
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 7.5px;
+  gap: 5px;
 }
 
 .search-form__label {
   width: fit-content;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
-  padding: 3px 2px 0;
+  padding: 2px;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
@@ -273,7 +279,7 @@ ol {
 
 .more-button {
   width: 390px;
-  margin: 30px 2px 2px 2px;
+  margin: 30px 2px 0;
 }
 
 .button:hover {
