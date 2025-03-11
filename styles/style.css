@@ -54,20 +54,21 @@ ol {
 
 .result {
   grid-column: 1;
-  width: 711px;
   display: flex;
   flex-direction: column;
+  justify-content: end;
   gap: 16px;
 }
 
 .result__video-container {
-  width: inherit;
-  height: 100%;
+  width: 711px;
   object-fit: fill;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
   position: relative;
+}
+
+.result__video { /* Исправлена заглушка */
+  width: 100%;
+  height: 100%;
 }
 
 .content__details {
